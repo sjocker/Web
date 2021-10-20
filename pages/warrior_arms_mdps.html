@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- Stylesheet -->
+<link rel="stylesheet" type="text/css" href="..\css\warrior.css">
+
+<!-- Title of website -->
+<title>Wotlk PVE</title>
+
+<!-- Default settings -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Font,color... style -->
+<style>
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: gray;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- Header -->
+<div class="header">
+	<h1>Wotlk 3.3.5 - pve guide</h1>
+	<p>A website created for the WoW players</p>
+</div>
+
+<!-- Navigation bar -->
+<div class="navbar">
+	<a href="../index.html">Home</a>                <!-- Home button -->
+
+    <div class="dropdown">                          <!-- Druid button -->
+        <button class="dropbtn">Druid
+        <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="druid_feral_mdps.html">Feral - mdps</a>
+            <a href="druid_balance_rdps.html">Balance - rdps</a>
+            <a href="druid_feral_tank.html">Feral - tank</a>
+            <a href="druid_restoration_healer.html">Restoration - healer</a>
+        </div>
+    </div>
+    <div class="dropdown">                          <!-- Warlock button -->
+        <button class="dropbtn">Warlock
+        <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="warlock_affliction_rdps.html">Affliction - rdps</a>
+            <a href="warlock_demonology_rdps.html">Demonology - rdps</a>
+            <a href="warlock_destruction_rdps.html">Destruction - rdps</a>
+        </div>
+    </div>
+    <div class="dropdown">                          <!-- Warrior button -->
+        <button class="dropbtn">Warrior
+        <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="warrior_fury_mdps.html">Fury - mdps</a>
+            <a href="warrior_arms_mdps.html">Arms - mdps</a>
+            <a href="warrior_protection_tank.html">Protection - tank</a>
+        </div>
+    </div>
+    <div class="dropdown">                          <!-- Death knight button -->
+        <button class="dropbtn">Death Knight
+        <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="deathknight_unholy_mdps.html">Unholy - mdps</a>
+            <a href="deathknight_frost_mdps.html">Frost - mdps</a>
+            <a href="deathknight_blood_mdps.html">Blood - mdps</a>
+            <a href="deathknight_blood_tank.html">Blood - tank</a>
+            <a href="deathknight_frost_tank.html">Frost - tank</a>
+        </div>
+    </div>
+    <div class="dropdown">                          <!-- Mage button -->
+        <button class="dropbtn">Mage
+        <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="mage_fire_rdps.html">Fire - rdps</a>
+            <a href="mage_arcane_rdps.html">Arcane - rdps</a>
+            <a href="mage_frost_rdps.html">Frost - rdps</a>
+        </div>
+    </div>
+    <div class="dropdown">                          <!-- Hunter button -->
+        <button class="dropbtn">Hunter
+        <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="hunter_marksmanship_rdps.html">Marksmanship - rdps</a>
+            <a href="hunter_survival_rdps.html">Survival - rdps</a>
+            <a href="hunter_beastmastery_rdps.html">Beast Mastery - rdps</a>
+        </div>
+    </div>
+    <div class="dropdown">                          <!-- Shaman button -->
+        <button class="dropbtn">Shaman
+        <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="shaman_enhancement_mdps.html">Enhancement - mdps</a>
+            <a href="shaman_elemental_rdps.html">Elemental - rdps</a>
+            <a href="shaman_restoration_healer.html">Restoration - healer</a>
+        </div>
+    </div>
+    <div class="dropdown">                          <!-- Priest button -->
+        <button class="dropbtn">Priest
+        <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="priest_shadow_rdps.html">Shadow - rdps</a>
+            <a href="priest_discipline_healer.html">Discipline - healer</a>
+            <a href="priest_holy_healer.html">Holy - healer</a>
+        </div>
+    </div>
+    <div class="dropdown">                          <!-- Rogue button -->
+        <button class="dropbtn">Rogue
+        <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="rogue_combat_mdps.html">Combat - mdps</a>
+            <a href="rogue_assasination_mdps.html">Assasination - mdps</a>
+            <a href="rogue_subtlety_mdps.html">Subtlety - mdps</a>
+        </div>
+    </div>
+    <div class="dropdown">                          <!-- Paladin button -->
+        <button class="dropbtn">Paladin
+        <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="paladin_retribution_mdps.html">Retribution - mdps</a>
+            <a href="paladin_protection_tank.html">Protection - tank</a>
+            <a href="paladin_holy_healer.html">Holy - healer</a>
+        </div>
+    </div>
+	<a href="about.html" class="about">About</a>         <!-- About button -->
+	<a href="addons.html" class="addons">Addons</a>      <!-- Addons button -->
+	<a href="dpslist.html" class="dpslist">DPS list</a>  <!-- DPS list button -->
+</div>
+
+<!-- Text field headline -->
+<section class="headline">
+    <h2>Warrior -> Arms -> mdps</h2>
+    <h4>
+    <table>                             <!-- Difficulty -->
+    <tbody>
+        <tr>
+            <td>Difficulty:</td>                   
+            <td>Easy</td>
+        </tr>
+    </tbody>
+    </table>
+    <p><u>Intro:</u></p>  
+    <p>An Arms specced Warrior...</p>
+    <p>Its main-dps are....</p>
+    </h4>
+</section>
+
+<!-- Text field collapsibles-->
+<button class="collapsible">Rotation</button>                   <!-- Rotation button-->
+<div class="content">
+    <p>text1<p>
+</div>
+<p></p>
+<button class="collapsible">Stats</button>                      <!-- Stats button-->
+<div class="content">
+	<p>Priority of stats</p> 
+	<p>1. Melee Hit = 263 (8%)</p> 
+	<p>2. Expertise = 26</p>
+	<p>3. Armor Penetration = 1400 (100%)</p>
+	<p>4. Strength / Attack Power</p>
+	<p>5. Critical Strike</p>
+</div>
+<p></p>
+<button class="collapsible">Talents</button>                    <!-- Talents button-->
+<div class="content">
+    <p>text3</p>
+</div>
+<p></p>
+<button class="collapsible">Glyphs</button>                     <!-- Glyphs button -->
+<div class="content">
+    <p>Major Glyphs</p>
+    <p>1. Glyph of Mortal Strike</p>
+    <p>2. Glyph of Rending</p>
+    <p>3. Glyph of Execution</p>
+    <p>______________________________</p>
+    <p>Minor Glyphs (personal preferences)</p>
+    <p>1. Glyph of Charge</p>
+    <p>2. Glyph of Enduring Victory</p>
+    <p>3. Glyph of Bloodrage</p>
+</div>
+<p></p>
+<button class="collapsible">Gems/sockets and enchants</button>  <!-- Gems/sockets and enchants button -->
+<div class="content">
+    <p>text5</p>
+</div>
+<p></p>
+<button class="collapsible">Tips and tricks</button>            <!-- Tips and tricks button-->
+<div class="content">
+    <p>text6</p>
+</div>
+<p></p>
+<button class="collapsible">Best in Slot (BiS) list</button>    <!-- Best in Slot (BiS) list button-->
+<div class="content">
+    <table>                                 <!-- table -->
+    <thead>
+        <tr>
+            <th colspan="4">BIS-list</th>
+        </tr>
+    </thead>
+    <tbody>                                 <!-- colonne 1,2,3,4 -->
+        <tr>
+            <td></td>
+            <td><b>Item-name</b></td>
+            <td><b>Item-lvl</b></td>
+            <td><b>From</b></td>
+        </tr>
+    </tbody>
+    <tbody>                                 <!-- Head/helm -->
+        <tr>
+            <td><b>Head/Helm</b></td>
+            <td>Sanctified Ymirjar Lord's Helmet</td>
+            <td>277</td>
+            <td>Tier 10 (vendor)</td>
+        </tr>
+    </tbody>
+    <tbody>                                 <!-- Neck -->
+        <tr>
+            <td><b>Neck</b></td>                   
+            <td>Penumbra Pendant</td>
+            <td>284</td>
+            <td>Halion (RS25HC)</td>
+        </tr>
+    </tbody>
+    <tbody>                                 <!-- Shoulder -->
+        <tr>
+            <td><b>Shoulder</b></td>
+            <td>Sanctified Ymirjar Lord's Shoulderplates</td>
+            <td>277</td>
+            <td>Tier 10 (vendor)</td>
+        </tr>
+    </tbody>
+    <tbody>                                 <!-- Cloak/back-->
+        <tr>
+            <td><b>Cloak/back</b></td>
+            <td>Vereesa's Dexterity</td>
+            <td>272</td>
+            <td>Insanity Run 50 (TOGC25)</td>
+        </tr>
+    </tbody>
+    <tbody>                                 <!-- Chest -->
+        <tr>
+            <td><b>Chest</b></td>
+            <td>Sanctified Ymirjar Lord's Battleplate</td>
+            <td>277</td>
+            <td>Tier 10 (vendor)</td>
+        </tr>
+    </tbody>
+    <tbody>                                 <!-- Wrist/bracer -->
+        <tr>
+            <td><b>Wrist/bracer</b></td>
+            <td>Toskk's Maximised Wristguards</td>
+            <td>277</td>
+            <td>Deathbringer Saurfang (ICC25HC)</td>
+        </tr>
+    </tbody>
+    <tbody>                                 <!-- Hands/gloves -->
+        <tr>
+            <td><b>Hands/gloves</b></td>
+            <td>Aldriana's Gloves of Secrecy</td>
+            <td>277</td>
+            <td>Rotface (ICC25HC)</td>
+        </tr>
+    </tbody>
+    <tbody>                                 <!-- Belt/waist -->
+        <tr>
+            <td><b>Belt/waist</b></td>
+            <td>Coldwraith Links</td>
+            <td>277</td>
+            <td>Valithria Dreamwalker (ICC25HC)</td>
+        </tr>
+    </tbody>
+    <tbody>                                 <!-- Legs -->
+        <tr>
+            <td><b>Legs</b></td>
+            <td>Sanctified Ymirjar Lord's Legplates</td>
+            <td>277</td>
+            <td>Tier 10 (vendor)</td>
+        </tr>
+    </tbody>
+    <tbody>                                 <!-- Feet/boots -->
+        <tr>
+            <td><b>Feet/boots</b></td>
+            <td>Apocalypse's Advance
+                <p>(Alt) Blood-soaked Saronite Stompers</p>
+            </td>
+            <td>284
+                <p>277</p>
+            </td>
+            <td>Halion (RS25HC)
+                <p>Lady Deathwhisper (ICC25HC)</p>
+            </td>
+        </tr>
+    </tbody>
+    <tbody>                                 <!-- Ring 1 -->
+        <tr>
+            <td><b>Ring 1</b></td>
+            <td>Frostbrood Sapphire Ring</td>
+            <td>277</td>
+            <td>Valithria Dreamwalker (ICC25HC)</td>
+        </tr>
+    </tbody>
+    <tbody>                                 <!-- Ring 2 -->
+        <tr>
+            <td><b>Ring 2</b></td>
+            <td>Ashen Band of Endless Might</td>
+            <td>277</td>
+            <td>ICC Reputation</td>
+        </tr>
+    </tbody>
+    <tbody>                                 <!-- Trinket 1 -->
+        <tr>
+            <td><b>Trinket 1</b></td>
+            <td>Deathbringer's Will</td>
+            <td>277</td>
+            <td>Deathbringer Saurfang (ICC25HC)</td>
+        </tr>
+    </tbody>
+    <tbody>                                 <!-- Trinket 2 -->
+        <tr>
+            <td><b>Trinket 2</b></td>
+            <td>Sharpened Twillight Scale </td>
+            <td>284</td>
+            <td>Halion (RS25HC)</td>
+        </tr>
+    </tbody>
+    <tbody>                                 <!-- Mainhand (2hand) -->
+        <tr>
+            <td><b>Mainhand (2-hand)</b></td>
+            <td>Shadowmourne
+                <p>(Alt) Oathbinder Charge of the Ranger-General</p>
+            </td>
+            <td>284
+                <p>284</p>
+            </td>
+            <td>Legendary quest line (ICC25)
+                <p>Lich King (ICC25HC)</p>
+            </td>
+        </tr>
+    </tbody>
+    <tbody>                                 <!-- Ranged -->
+        <tr>
+            <td><b>Ranged</b></td>
+            <td>Fal'Inrush, Defender of Quel'thalas</td>
+            <td>284</td>
+            <td>Lich King (ICC25HC)</td>
+        </tr>
+    </tbody>
+    </table>
+</div>
+
+<!-- Run on-button-click script for collapsibles-->
+<script src="..\scripts\script.js"></script>
+
+<p></p>
+
+<!-- Footer -->
+<div class="footer">
+	<h2>Wotlk 3.3.5 guide</h2>
+</div>
+
+</body>
+
+</html>
