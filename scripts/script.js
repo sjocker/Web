@@ -12,16 +12,3 @@ for (i = 0; i < coll.length; i++) {
     } 
   });
 }
-
-const f = document.getElementById('form');
-const q = document.getElementById('query');
-const site = 'https://sjocker.github.io/wotlk3.3.5/pages/';
-
-function submitted(event) {
-  event.preventDefault();
-  const url = site + '+' + q.value;
-  const win = window.open(url, '_blank');
-  win.focus();
-}
-
-f.addEventListener('submit', submitted);
