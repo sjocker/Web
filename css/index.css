@@ -286,6 +286,10 @@ html, body {
     .footer {
         padding: 20px;
         text-align: center;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
     }
 
     .footer p {
@@ -296,5 +300,10 @@ html, body {
     .footer-links a {
         font-size: 14px;
         margin: 5px 0;
+    }
+
+    /* Adjust background to fill the entire screen */
+    .background-container {
+        min-height: 100vh;
     }
 }
