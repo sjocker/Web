@@ -263,9 +263,10 @@ html, body {
 
 /* Mobile Styles */
 @media only screen and (max-width: 600px) {
-    /* Adjust header font sizes */
+    /* Adjust header font sizes and padding */
     .header {
         padding: 20px;
+        text-align: center; /* Center align header content */
     }
 
     .header h1 {
@@ -277,12 +278,31 @@ html, body {
         font-size: 14px;
     }
 
-    /* Adjust navigation button sizes */
+    /* Adjust navigation button sizes and layout */
+    .nav-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px; /* Add padding to the navigation container */
+    }
+
+    .nav-left,
+    .nav-middle,
+    .nav-right {
+        width: 100%; /* Ensure buttons take up full width */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap; /* Allow buttons to wrap to new line if needed */
+        margin-bottom: 20px; /* Add margin between navigation sections */
+    }
+
     .square {
-        width: 80px;
-        height: 80px;
+        width: calc(25% - 20px); /* Adjust button width */
+        max-width: 120px; /* Set max-width for better responsiveness */
+        height: 80px; /* Adjust button height */
         font-size: 12px;
-        margin: 10px;
+        margin: 10px; /* Add margin around buttons */
     }
 
     /* Adjust footer font sizes and alignment */
@@ -293,7 +313,7 @@ html, body {
         bottom: 0;
         left: 0;
         width: 100%;
-        background-color: #34495e; /* Ensure footer background color is applied */
+        background-color: #34495e;
     }
 
     .footer p {
@@ -309,10 +329,7 @@ html, body {
     /* Adjust background to fill the entire screen */
     .background-container {
         min-height: 100vh;
-    }
-
-    /* Ensure footer does not overlap navigation squares */
-    .nav-container {
-        margin-bottom: 80px; /* Adjust as needed based on footer height */
+        background-size: cover; /* Ensure background covers the entire screen */
+        background-position: center; /* Center the background */
     }
 }
