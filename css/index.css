@@ -299,7 +299,7 @@ html, body {
 
     .square {
         width: calc(25% - 20px); /* Adjust button width */
-        max-width: 120px; /* Set max-width for better responsiveness */
+        max-width: 100px; /* Set max-width for better responsiveness */
         height: 80px; /* Adjust button height */
         font-size: 12px;
         margin: 10px; /* Add margin around buttons */
@@ -318,12 +318,14 @@ html, body {
 
     .footer p {
         font-size: 12px;
-        margin: 10px 0;
+        margin: 5px 0;
+        text-align: center; /* Center align footer text */
     }
 
     .footer-links a {
-        font-size: 14px;
+        font-size: 12px;
         margin: 5px 0;
+        text-align: center; /* Center align footer links */
     }
 
     /* Adjust background to fill the entire screen */
