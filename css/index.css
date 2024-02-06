@@ -258,6 +258,9 @@ html, body {
     color: #f39c12;
 }
 
+
+/* ///////////////////////Mobile styles///////////////////////// */
+
 /* Mobile Styles */
 @media only screen and (max-width: 600px) {
     /* Adjust header font sizes */
@@ -290,6 +293,7 @@ html, body {
         bottom: 0;
         left: 0;
         width: 100%;
+        background-color: #34495e; /* Ensure footer background color is applied */
     }
 
     .footer p {
@@ -305,5 +309,10 @@ html, body {
     /* Adjust background to fill the entire screen */
     .background-container {
         min-height: 100vh;
+    }
+
+    /* Ensure footer does not overlap navigation squares */
+    .nav-container {
+        margin-bottom: 80px; /* Adjust as needed based on footer height */
     }
 }
