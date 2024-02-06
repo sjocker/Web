@@ -282,24 +282,6 @@ html, body {
         margin: 10px;
     }
 
-    /* Adjust navigation container layout for mobile */
-    .nav-container {
-        flex-direction: column;
-        align-items: center;
-        padding: 20px; /* Add padding to the entire navigation container */
-    }
-
-    /* Adjust nav-middle section for mobile */
-    .nav-middle {
-        grid-template-columns: repeat(2, minmax(100px, 1fr)); /* Display two columns for smaller screens */
-        grid-template-rows: repeat(6, minmax(80px, 1fr)); /* Adjust number of rows */
-    }
-
-    /* Adjust nav-left and nav-right sections for mobile */
-    .nav-left, .nav-right {
-        margin: 10px 0;
-    }
-
     /* Adjust footer font sizes and alignment */
     .footer {
         padding: 20px;
