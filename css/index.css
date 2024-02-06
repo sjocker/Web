@@ -1,142 +1,261 @@
+/* ////////////////////////////CSS setup///////////////////////////// */
+
+/* Reset default margin and padding */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set HTML and body to take up full viewport */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* ////////////////////////////Background///////////////////////////// */
+
+/* Background Container */
+.background-container {
+    height: 100%;
+    background: url('../images/ruinsoflordaeron.png') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* ////////////////////////////Header///////////////////////////////// */
+
+/* Header */
 .header {
-	padding: 10px; /* some padding */
-	text-align: center; /* center the text */
-	background: #1abc9c; /* green background */
-	color: white; /* white text color */
+    padding: 30px;
+    text-align: center;
+    background: linear-gradient(45deg, #3498db, #1abc9c);
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
 }
 
 /* Increase the font size of the <h1> element */
 .header h1 {
-	font-size: 30px;
-}
-
-/* Style the top navigation bar */
-.navbar {
-	overflow: hidden; /* Hide overflow */
-	background-color: #333; /* Dark background color */
-}
-
-/* Style the navigation bar links */
-.navbar a {
-	float: left; /* Make sure that the links stay side-by-side */
-	display: block; /* Change the display to block, for responsive reasons (see below) */
-	color: white; /* White text color */
-	text-align: center; /* Center the text */
-	padding: 14px 20px; /* Add some padding */
-	text-decoration: none; /* Remove underline */
-}
-
-/* right-aligned about */
-.navbar a.about {
-	float: right; /* Float an about-link to the right */
-}
-
-/* right-aligned addons */
-.navbar a.addons {
-	float: right; /* Float an addons-link to the right */
-}
-
-/* right-aligned dpslist */
-.navbar a.dpslist {
-	float: right; /* Float a dpslist-link to the right */
-}
-
-/* Change color on hover/mouse-over */
-.navbar a:hover {
-	background-color: #ddd; /* Grey background color */
-	color: black; /* Black text color */
+    font-size: 40px;
+    margin-bottom: 10px;
+    letter-spacing: 2px; /* Add letter spacing for a stylish look */
 }
 
 
-/* The dropdown container */
-.dropdown {
-	float: left;
-	overflow: hidden;
-}
+/* /////////////////////////Navigation container////////////////////// */
 
-/* Dropdown button */
-.dropdown .dropbtn {
-	font-size: 16px;
-	border: none;
-	outline: none;
-  	color: white;
-  	padding: 14px 16px;
-  	background-color: inherit;
-  	font-family: inherit; /* Important for vertical align on mobile phones */
-  	margin: 0; /* Important for vertical align on mobile phones */
-}
-
-/* Add a grey background color to navbar links on hover */
-.navbar a:hover, .dropdown:hover .dropbtn {
-  	background-color: #ddd;
-}
-
-/* Dropdown content (hidden by default) */
-.dropdown-content {
-  	display: none;
-  	position: absolute;
-  	background-color: #f9f9f9;
-  	min-width: 160px;
-  	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  	z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  	float: none;
-  	color: black;
-  	padding: 12px 16px;
-  	text-decoration: none;
-  	display: block;
-  	text-align: left;
-}
-
-/* Add a grey background color to dropdown links on hover */
-.dropdown-content a:hover {
-  	background-color: #ddd;
-}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  	display: block;
-}
-
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
-.navbar a {
-	float: none;
-	width: 100%;
-  }
+/* Navigation Container */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 50px 40px; /* Increase the horizontal padding */
 }
 
 
-/* maintext field */
-.maintext {
-	background-color: #ddd; /* Grey background color */
+/* /////////////////////////Left section - Home//////////////////////// */
+
+/* Left section - Home */
+.nav-left {
+    flex-grow: 1;
+    text-align: center;
+    max-width: 200px;
 }
 
-/* The image on the frontpage */
-.centerimg {
-	float: center;
-	opacity: 0.5;
-    padding: 0;
-    display: block;
-    margin: 0 auto;
-    max-height: 100%;
-    max-width: 100%;
-	width: 100%;
-	
+.square.home {
+    width: 100px; /* Adjusted width */
+    height: 100px; /* Adjusted height */
+    background: linear-gradient(45deg, #2980b9, #3498db);
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 8px;
 }
 
-/* ensure proper sizing */
-* {
-	box-sizing: border-box;
+
+/* /////////////////////////Middle section//////////////////////////// */
+
+/* Middle section - WoW classes */
+.nav-middle {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(150px, 1fr));
+    grid-template-rows: repeat(3, minmax(150px, 1fr));
+    gap: 1px;
+    justify-content: center;
+    max-width: 1000px;
+    margin-right: 10px; /* Add margin to separate from the right section */
 }
 
+/* Stylish Buttons for WoW Classes with Icons */
+.square.druid {
+    border-color: #FF7D0A; /* Druid color */
+    background-image: url('../images/druid.png'); /* Druid icon image */
+}
+
+.square.warlock {
+    border-color: #8787ED; /* Warlock color */
+    background-image: url('../images/warlock.png'); /* Warlock icon image */
+}
+
+.square.warrior {
+    border-color: #C79C6E; /* Warrior color */
+    background-image: url('../images/warrior.png'); /* Warrior icon image */
+}
+
+.square.death-knight {
+    border-color: #C41F3B; /* Death Knight color */
+    background-image: url('../images/death-knight.png'); /* Death Knight icon image */
+}
+
+.square.mage {
+    border-color: #40C7EB; /* Mage color */
+    background-image: url('../images/mage.png'); /* Mage icon image */
+}
+
+.square.hunter {
+    border-color: #ABD473; /* Hunter color */
+    background-image: url('../images/hunter.png'); /* Hunter icon image */
+}
+
+.square.shaman {
+    border-color: #0070DE; /* Shaman color */
+    background-image: url('../images/shaman.png'); /* Shaman icon image */
+}
+
+.square.priest {
+    border-color: #FFFFFF; /* Priest color */
+    background-image: url('../images/priest.png'); /* Priest icon image */
+}
+
+.square.rogue {
+    border-color: #FFD700; /* Rogue color */
+    background-image: url('../images/rogue.png'); /* Rogue icon image */
+}
+
+.square.paladin {
+    border-color: #F58CBA; /* Paladin color */
+    background-image: url('../images/paladin.png'); /* Paladin icon image */
+}
+
+
+/* /////////////////////////Right section////////////////////////////// */
+
+/* Right section - Addons and DPS List */
+.nav-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 200px; /* Adjust width as needed */
+}
+
+/* Stylish Buttons */
+.square.addons,
+.square.dpslist {
+    width: 100px; /* Adjusted width */
+    height: 100px; /* Adjusted height */
+    background: linear-gradient(45deg, #e74c3c, #c0392b);
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    margin: 15px;
+    display: flex;
+    align-items: right ;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+
+/* /////////////////////////Button effect//////////////////////////// */
+
+/* Stylish Buttons for WoW Classes with Icons */
+.square {
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    border-radius: 8px;
+    font-size: 16px; /* Change font size as desired */
+    font-weight: bolder;
+    background-size: 100% 100%; /* Stretch the background image to cover the entire button */
+    overflow: hidden; /* Hide the overflow text */
+    position: relative; /* Position for absolute text */
+    -webkit-text-stroke: 0.1px black;
+   text-shadow:
+       0.3px 0.3px 0 #000,
+     -0.1px -0.1px 0 #000,
+      0.1px -0.1px 0 #000,
+      -0.1px 0.1px 0 #000,
+       0.1px 0.1px 0 #000;
+    border: 2px solid transparent; /* Add transparent border by default */
+    color: white
+}
+
+/* Hover effect */
+.square:hover {
+    transform: scale(1.05);
+    background: linear-gradient(45deg, #555, #777);
+}
+
+/* Apply text-decoration: none to anchor tags inside .nav-container */
+.nav-container a {
+    text-decoration: none;
+}
+
+/* /////////////////////////Footer//////////////////////////// */
+
+/* Footer */
 .footer {
-	padding: 20px; /* some padding */
-	font-size: 10px; /* font size*/
-	text-align: center; /* center text*/
-	background: #ddd; /* grey background */
-	width: 100%; /* fitting the screen nicely */
+    background-color: #34495e;
+    color: white;
+    padding: 90px 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+}
+
+.footer p {
+    margin: 30px;
+    font-size: 14px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 18px;
+    transition: color 0.3s ease;
+    display: flex;
+    flex-direction: column; /* Stack links vertically */
+    margin: 10px;
+    text-decoration: underline;
+}
+
+.footer-links a:hover {
+    color: #f39c12;
 }
