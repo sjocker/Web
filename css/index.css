@@ -278,14 +278,12 @@ html, body {
         font-size: 14px;
     }
 
-    /* Adjust navigation button sizes and layout */
+    /* Adjust navigation container */
     .nav-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         padding: 20px; /* Add padding to the navigation container */
     }
 
+    /* Adjust left, middle, and right sections */
     .nav-left,
     .nav-middle,
     .nav-right {
@@ -297,15 +295,15 @@ html, body {
         margin-bottom: 20px; /* Add margin between navigation sections */
     }
 
+    /* Adjust button size */
     .square {
-        width: calc(25% - 20px); /* Adjust button width */
-        max-width: 100px; /* Set max-width for better responsiveness */
-        height: 80px; /* Adjust button height */
-        font-size: 12px;
-        margin: 10px; /* Add margin around buttons */
+        width: 10vw; /* Set a percentage width for buttons */
+        height: 10vw; /* Set a percentage height for buttons */
+        font-size: 2vw; /* Adjust font size based on viewport width */
+        margin: 5px; /* Add margin around buttons */
     }
 
-    /* Adjust footer font sizes and alignment */
+    /* Footer */
     .footer {
         padding: 20px;
         text-align: center;
@@ -314,6 +312,7 @@ html, body {
         left: 0;
         width: 100%;
         background-color: #34495e;
+        z-index: 9999; /* Ensure the footer stays on top */
     }
 
     .footer p {
@@ -330,7 +329,87 @@ html, body {
 
     /* Adjust background to fill the entire screen */
     .background-container {
-        min-height: 100vh;
+        min-height: calc(100vh - 110px); /* Ensure the background container's height doesn't overlap the footer */
+        background: url('../images/ruinsoflordaeron.png') repeat; /* Repeat background */
+        background-size: cover; /* Ensure background covers the entire screen */
+        background-position: center; /* Center the background */
+    }
+
+
+}
+
+/* ///////////////////////Tablet styles///////////////////////// */
+
+/* Tablet Styles */
+@media only screen and (max-width: 992px) {
+    /* Adjust header font sizes and padding */
+    .header {
+        padding: 20px;
+        text-align: center; /* Center align header content */
+    }
+
+    .header h1 {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .header p {
+        font-size: 16px;
+    }
+
+    /* Adjust navigation container */
+    .nav-container {
+        padding: 20px; /* Add padding to the navigation container */
+    }
+
+    /* Adjust left, middle, and right sections */
+    .nav-left,
+    .nav-middle,
+    .nav-right {
+        width: 100%; /* Ensure buttons take up full width */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap; /* Allow buttons to wrap to new line if needed */
+        margin-bottom: 20px; /* Add margin between navigation sections */
+    }
+
+    /* Adjust button size */
+    .square {
+        width: 10vw; /* Set a percentage width for buttons */
+        height: 10vw; /* Set a percentage height for buttons */
+        font-size: 2vw; /* Adjust font size based on viewport width */
+        margin: 5px; /* Add margin around buttons */
+    }
+
+    /* Footer */
+    .footer {
+        padding: 20px;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #34495e;
+        z-index: 9999; /* Ensure the footer stays on top */
+    }
+
+    .footer p {
+        font-size: 12px;
+        margin: 5px 0;
+        text-align: center; /* Center align footer text */
+    }
+
+    .footer-links a {
+        font-size: 12px;
+        margin: 5px 0;
+        text-align: center; /* Center align footer links */
+    }
+
+    /* Adjust background to fill the entire screen */
+    .background-container {
+        min-height: calc(100vh - 110px); /* Ensure the background container's height doesn't overlap the footer */
+        background: url('../images/ruinsoflordaeron.png') repeat; /* Repeat background */
         background-size: cover; /* Ensure background covers the entire screen */
         background-position: center; /* Center the background */
     }
